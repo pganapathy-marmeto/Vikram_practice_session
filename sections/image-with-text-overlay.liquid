@@ -1,0 +1,187 @@
+{{ 'section-image-with-text-overlay.css' | asset_url | stylesheet_tag }}
+
+{% style %}
+    .padding--{{section.id}}{
+    background: #EAF3F8;
+      padding:10px;
+    }
+      .image--{{section.id}}{
+        {% if section.settings.image_2 != blank %}
+          display:grid;
+          grid-template-columns: repeat(12,1fr);
+          position:relative;
+          {% else %}
+          display: flex
+        {% endif %}
+      }
+      {% if section.settings.image_2 != blank %}
+      picture:first-child{
+        grid-column: 1 / span8;
+      grid-row: 1;
+      }
+        picture:last-child{
+          grid-column: 6 / -1;
+      grid-row: 1;
+      padding-top: 30%;
+  }
+    @media screen and (min-width:750px){
+      .padding--{{section.id}}{
+        padding: {{section.settings.desktop_padding }}px
+      }
+        }
+      {% endif %}
+    }
+{% endstyle %}
+
+{% liquid
+  assign Image_1 = section.settings.image_1
+  assign Image_2 = section.settings.image_2
+  assign catchPhase = section.settings.catch_phase
+  assign heading = section.settings.heading
+  assign description = section.settings.description
+  assign buttonLabel = section.settings.button_label
+  assign buttonLink = section.settings.button_link
+  assign contentPosition = section.settings.content_position
+%}
+
+<div class="image-with-text-overlay--wrapper padding--{{ section.id }}">
+  <div class="image-with-text-overlay--content-wrapper {{ contentPosition }} isolate">
+    <div class="image-with-text-overlay--image-wrapper image--{{ section.id }}">
+      {% if Image_1 != blank %}
+        {% render 'responsive-picture', desktopImage: Image_1, img-class: 'w-full' %}
+      {% endif %}
+      {% if Image_2 != blank %}
+        {% render 'responsive-picture', desktopImage: Image_2, img-class: 'w-full' %}
+      {% endif %}
+    </div>
+    <div class="image-with-text-overlay--text-wrapper">
+      <div class="image-with-text-overlay-inner-text-wrapper">
+        {% if catchPhase != blank %}
+          <div class="image-with-text-overlay--catchPhase">
+            {{ catchPhase }}
+          </div>
+        {% endif %}
+        {% if heading != blank %}
+          <h2 class="image-with-text-overlay--heading">
+            {{ heading }}
+          </h2>
+        {% endif %}
+        {% if description != blank %}
+          <div class="image-with-text-overlay--description">
+            {{ description }}
+          </div>
+        {% endif %}
+        {% if buttonLabel != blank %}
+          <button
+            class="image-with-text-overlay--button button"
+            {% if buttonLink == blank %}
+              disabled
+            {% endif %}
+            aria-label="{{ buttonLabel }}"
+          >
+            <a
+              href="{{ buttonLink }}"
+              {% if buttonLink == blank %}
+                aria-disabled="true"
+              {% else %}
+                aria-label="{{ buttonLabel }}"
+              {% endif %}
+            >
+              {{ buttonLabel }}
+            </a>
+          </button>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "hero banner",
+  "tag": "section",
+  "class": "section anotherClass",
+  "settings": [
+    {
+      "type": "image_picker",
+      "label": "Image 1",
+      "id": "image_1",
+      "info": "Recommended size: 600 x 714"
+    },
+    {
+      "type": "image_picker",
+      "label": "Image 2",
+      "id": "image_2",
+      "info": "Recommended size: 600 x 714"
+    },
+    {
+    "type": "richtext",
+    "label": "Catch phase",
+    "id": "catch_phase",
+    "default": "<p>Be Winter Ready!</p>"
+  },
+    {
+    "type": "richtext",
+    "label": "Heading",
+    "id": "heading",
+    "default": "<p>Apparel & Accessories</p>"
+  },
+    {
+    "type": "richtext",
+    "label": "Description",
+    "id": "description",
+    "default": "<p>Our carefully curated collection features high-quality gloves, hats, scraves, goggles, jackets and more, designed to withstand the hardest winter condiitions while enhancing your performance.</p>"
+  },
+    {
+    "type": "text",
+    "label": "Button label",
+    "id": "button_label",
+    "default": "Shop Now ↗"
+  },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button link"
+    },
+    {
+      "type": "header",
+      "content": "Contetn alignment options"
+    },
+  {
+    "type": "select",
+    "label": "content positon",
+    "id": "content_position",
+    "options": [
+      {
+        "label": "Image first",
+        "value": "image_first"
+      },
+      {
+        "label": "Text first",
+        "value": "text_first"
+      }
+    ],
+    "default":"image_first"
+  },
+    {
+      "type": "header",
+      "content": "Section padding options"
+    },
+    {
+      "type": "range",
+      "id": "desktop_padding",
+      "min": 0,
+      "max": 100,
+      "step": 10,
+      "unit": "px",
+      "label": "Padding",
+      "default": 0
+    }
+  ],
+  "presets": [
+    {
+      "name": "hero banner"
+    }
+  ]
+}
+{% endschema %}
