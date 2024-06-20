@@ -1,0 +1,69 @@
+img.w-full {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .h-full {
+    height: 100%;
+  }
+  .shop-the-look-container picture {
+    display: block;
+    line-height: 0;
+    height: 100%;
+  }
+  .shop-the-look-card__image-wrapper svg.placeholder-svg {
+    width: 100%;
+    height: 100%;
+  }
+  .shop-the-look-card__image-wrapper.media.media--portrait.isolate{
+    position: relative;
+  }
+  .shop-the-look-card__image-wrapper.media.media--portrait .shop-the-look_hotspot{
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    background: white;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    border-radius: 50%;
+    transform: translate(-100%,-100%);
+    display: block;
+  }
+
+  .shop-the-look-card__image-wrapper.media.media--portrait .shop-the-look_hotspot::after{
+    content: "";
+    width: 32px;
+    display: block;
+    height: 32px;
+    background: black;
+    border-radius: 50%;
+    transform: scale(0.4);
+  }
+
+  .splide__slide{
+    display: flex;
+    justify-content: center;
+  }
+
+  /* take out display:none to make the pagination dots visible  */
+  .splide__pagination{
+    position: static;
+    width: 100%;
+    display: none;
+  }
+
+  .shop-the-look-card__image-wrapper{
+    position: relative;
+    z-index: 1;
+  }
+
+  .hotspot-card__container{
+    position: relative; 
+    z-index: 1;
+  }
+
+  /* .hotspot-card__container img{
+    width: 5rem;
+    height: auto;
+  } */

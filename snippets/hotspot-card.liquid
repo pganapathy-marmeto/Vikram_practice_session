@@ -1,0 +1,20 @@
+<div class="hotspot-card__container">
+  <div class="hotspot-card__image-container">
+    <img src="{{product.featured_image| image_url  }}" alt="">
+  </div>
+  <div class="hotspot-card__description">
+    <p>
+      {{ product.title }}
+    </p>
+    <p style="{% if product.compare_at_price %}
+      color: rgb(273, 9, 9)
+  {% endif %}">
+      From ${{ product.price }} USD
+      {% if product.compare_at_price %}
+        <span style="
+        color: black">
+${{ product.compare_at_price }} USD</span>
+      {% endif %}
+    </p>
+  </div>
+</div>
