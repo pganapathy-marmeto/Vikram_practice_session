@@ -1359,3 +1359,19 @@ class AccountIcon extends HTMLElement {
 }
 
 customElements.define('account-icon', AccountIcon);
+
+
+// Custom element for Splide.js 
+
+class SpliderComponent extends HTMLElement {
+  constructor() {
+    super();
+
+    this.options = JSON.parse(this.dataset.options);
+    console.log(this.options)
+    this.splide = new Splide( this , this.options ).mount();
+  }
+}
+customElements.define('splider-component', SpliderComponent);
+
+ 
