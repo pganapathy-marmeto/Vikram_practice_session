@@ -117,7 +117,7 @@
           "type": "hotspot",
           "settings": {
             "hotspot": true,
-            "hotspot_product": "",
+            "hotspot_product": "water-resistant-snow-hoodie",
             "hotspot_horizontal_position": 10,
             "hotspot_vertical_position": 10
           }
@@ -125,8 +125,8 @@
         "hotspot_GL8LUn": {
           "type": "hotspot",
           "settings": {
-            "hotspot": false,
-            "hotspot_product": "",
+            "hotspot": true,
+            "hotspot_product": "beginners-guide-to-snowboarding-dvd",
             "hotspot_horizontal_position": 10,
             "hotspot_vertical_position": 10
           }
