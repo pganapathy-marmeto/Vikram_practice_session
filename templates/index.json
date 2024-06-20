@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "image_banner": {
@@ -69,84 +78,76 @@
         "padding_bottom": 36
       }
     },
-    "content_with_slider_pQetNC": {
+    "image_with_text_overlay_fxqyV6": {
+      "type": "image-with-text-overlay",
+      "disabled": true,
+      "settings": {
+        "image_1": "shopify:\/\/shop_images\/image_1.png",
+        "image_2": "shopify:\/\/shop_images\/image_2.png",
+        "catch_phase": "<p>Be Winter Ready!<\/p>",
+        "heading": "<p><strong>Apparel & Accessories<\/strong><\/p>",
+        "description": "<p>Our carefully curated collection features high-quality gloves, hats, scraves, goggles, jackets and more, designed to withstand the hardest winter condiitions while enhancing your performance.<\/p>",
+        "button_label": "Shop Now ↗",
+        "button_link": "shopify:\/\/collections",
+        "content_position": "image_first",
+        "desktop_padding": 40
+      }
+    },
+    "tab_switcher_XyN9xy": {
+      "type": "tab-switcher",
+      "disabled": true,
+      "settings": {
+        "heading": "",
+        "description": ""
+      }
+    },
+    "content_with_slider_wTJbzT": {
       "type": "content-with-slider",
       "blocks": {
-        "hotspot_kLiyMT": {
-          "type": "hotspot",
-          "settings": {
-            "hotspot": true,
-            "hotspot_product": "water-resistant-snow-hoodie",
-            "hotspot_horizontal_position": 34,
-            "hotspot_vertical_position": 34
-          }
-        },
-        "hotspot_b8KyMQ": {
-          "type": "hotspot",
-          "settings": {
-            "hotspot": true,
-            "hotspot_product": "beginners-guide-to-snowboarding-dvd",
-            "hotspot_horizontal_position": 66,
-            "hotspot_vertical_position": 66
-          }
-        },
-        "hotspot_GqeY3i": {
+        "hotspot_zUr4XX": {
           "type": "hotspot",
           "settings": {
             "hotspot": true,
             "hotspot_product": "high-performance-snow-goggles",
-            "hotspot_horizontal_position": 40,
-            "hotspot_vertical_position": 18
+            "hotspot_horizontal_position": 10,
+            "hotspot_vertical_position": 10
+          }
+        },
+        "hotspot_QfMTCN": {
+          "type": "hotspot",
+          "settings": {
+            "hotspot": true,
+            "hotspot_product": "",
+            "hotspot_horizontal_position": 10,
+            "hotspot_vertical_position": 10
+          }
+        },
+        "hotspot_GL8LUn": {
+          "type": "hotspot",
+          "settings": {
+            "hotspot": false,
+            "hotspot_product": "",
+            "hotspot_horizontal_position": 10,
+            "hotspot_vertical_position": 10
           }
         }
       },
       "block_order": [
-        "hotspot_kLiyMT",
-        "hotspot_b8KyMQ",
-        "hotspot_GqeY3i"
+        "hotspot_zUr4XX",
+        "hotspot_QfMTCN",
+        "hotspot_GL8LUn"
       ],
       "settings": {
         "content_image": "shopify:\/\/shop_images\/igloo_main_image.webp",
         "padding": 20
-      }
-    },
-    "shop_the_look_D7ANtY": {
-      "type": "shop-the-look",
-      "blocks": {
-        "image_if7nf6": {
-          "type": "image",
-          "settings": {
-            "heading": "Heading",
-            "description": "",
-            "button_label": "Click me",
-            "button_link": "",
-            "hotspot_primary": false,
-            "hotspot_product_1": "",
-            "hotspot_1_horizontal_position": 10,
-            "hotspot_1_vertical_position": 10,
-            "hotspot_secondory": false,
-            "hotspot_product_2": "",
-            "hotspot_2_horizontal_position": 10,
-            "hotspot_2_vertical_position": 10
-          }
-        }
-      },
-      "block_order": [
-        "image_if7nf6"
-      ],
-      "disabled": true,
-      "settings": {
-        "slide_type": "loop",
-        "slide_per_page": 2,
-        "padding_top": 10,
-        "padding_bottom": 10
       }
     }
   },
   "order": [
     "image_banner",
     "featured_collection",
-    "content_with_slider_pQetNC",
-    "shop_the_look_D7ANtY"
+    "image_with_text_overlay_fxqyV6",
+    "tab_switcher_XyN9xy",
+    "content_with_slider_wTJbzT"
   ]
 }
