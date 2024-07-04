@@ -105,6 +105,7 @@
         "hotspot_b8KyMQ",
         "hotspot_GqeY3i"
       ],
+      "disabled": true,
       "settings": {
         "content_image": "shopify:\/\/shop_images\/igloo_main_image.webp",
         "padding": 20
@@ -141,12 +142,65 @@
         "padding_top": 10,
         "padding_bottom": 10
       }
+    },
+    "you_may_also_like_fwAwje": {
+      "type": "you-may-also-like",
+      "blocks": {
+        "card_9Kdc3m": {
+          "type": "card",
+          "settings": {
+            "product": "full-sleeve-high-neck-t-shirt"
+          }
+        },
+        "card_TkhbAi": {
+          "type": "card",
+          "settings": {
+            "product": "mens-half-sleeve-t-shirt"
+          }
+        },
+        "card_xrddBQ": {
+          "type": "card",
+          "settings": {
+            "product": "womens-oversized-hoodie"
+          }
+        },
+        "card_88cdMm": {
+          "type": "card",
+          "settings": {
+            "product": "full-sleeve-high-neck-t-shirt-1"
+          }
+        },
+        "card_KMiYPY": {
+          "type": "card",
+          "settings": {
+            "product": "womens-casual-jacket"
+          }
+        },
+        "card_xi6xJT": {
+          "type": "card",
+          "settings": {
+            "product": "solid-women-jumpsuit"
+          }
+        }
+      },
+      "block_order": [
+        "card_9Kdc3m",
+        "card_TkhbAi",
+        "card_xrddBQ",
+        "card_88cdMm",
+        "card_KMiYPY",
+        "card_xi6xJT"
+      ],
+      "settings": {
+        "header": "<p>You may also like<\/p>"
+      }
     }
   },
   "order": [
     "image_banner",
     "featured_collection",
     "content_with_slider_pQetNC",
-    "shop_the_look_D7ANtY"
+    "shop_the_look_D7ANtY",
+    "you_may_also_like_fwAwje"
   ]
 }

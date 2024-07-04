@@ -1,5 +1,6 @@
 <section
   id="MainProduct-{{ section.id }}"
+  data-url="{{product.url}}"
   class="section-{{ section.id }}-padding gradient color-{{ section.settings.color_scheme }}"
   data-section="{{ section.id }}"
 >
@@ -84,6 +85,8 @@
             {%- case block.type -%}
               {%- when '@app' -%}
                 {% render block %}
+              {% when 'coupon' %}
+                {% render 'coupon', product:product %}
               {%- when 'text' -%}
                 <p
                   class="product__text inline-richtext{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}"
@@ -785,6 +788,11 @@
           "label": "t:sections.main-product.blocks.text.settings.text_style.label"
         }
       ]
+    },
+    {
+      "type": "coupon",
+      "name":"Discount coupon",
+      "limit":1
     },
     {
       "type": "title",

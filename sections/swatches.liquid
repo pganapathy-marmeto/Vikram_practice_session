@@ -1,0 +1,44 @@
+<style>
+    {% for color_block in section.blocks %}
+  .swatch .swatch--{{color_block.settings.color}}{
+  {% case color_block.type %}
+  {% when "Color" %}
+    background-color : {{color_block.settings.color}};
+  {% when "Image" %}
+    background-image : url('{{color_block.settings.color |  image_url: width:60 }}')
+  {% endcase %}
+  }
+    {% endfor %}
+</style>
+{% schema %}
+{
+  "name": "Swatches",
+  "class": "swatch-section",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "Color",
+      "name": "Swatch color",
+      "settings": [
+        { "type": "text", "id": "name", "label": "Name" },
+        { "type": "color", "label": "Color", "id": "color" }
+      ]
+    },
+    {
+      "type": "Image",
+      "name": "Image",
+      "settings": [
+        { "type": "text", "id": "name", "label": "Name" },
+        { "type": "image_picker", "label": "Image", "id": "color" }
+      ]
+    }
+  ]
+}
+{% endschema %}
+
+
+
+
+
+
+

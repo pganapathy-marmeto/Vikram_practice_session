@@ -6,6 +6,11 @@
   text-align: center;
 }
 
+#dropdown{
+  border: 1px solid black;
+  margin-top: 20px;
+}
+
 @media screen and (min-width: 750px) {
   .customer:not(.account):not(.order) {
     max-width: 47.8rem;

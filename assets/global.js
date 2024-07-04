@@ -1198,6 +1198,14 @@ class VariantSelects extends HTMLElement {
           `Volume-${this.dataset.originalSection ? this.dataset.originalSection : this.dataset.section}`
         );
 
+        const couponSource = html.querySelector('#coupon_id')
+        const couponDestination = document.querySelector('#coupon_id')
+        console.log(couponSource)
+        console.log(couponDestination)
+        if(couponSource && couponDestination){
+          couponDestination.innerHTML = couponSource.innerHTML
+        }
+
         this.updateMedia(html);
 
         const pricePerItemDestination = document.getElementById(`Price-Per-Item-${this.dataset.section}`);

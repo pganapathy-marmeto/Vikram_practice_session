@@ -1,0 +1,109 @@
+{{ 'you-may-also-like.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'you-may-also-like.js' |  asset_url }}" defer></script>
+
+
+{% capture splideOptions %}
+    {
+        "type": "slide",
+        "perPage":4,
+        "width":"320px",
+        "pagination":false,
+        "breakpoints":{
+          "481":{
+            "width":"100%",
+            "perPage":2
+          },
+          "768":{
+            "perPage":3
+          },
+          "1000":{
+            "perPage":2
+          },
+          "1300":{
+            "perPage":3
+          }
+        }
+    }
+  {% endcapture %}
+<div class="space-at-edges">
+  <!-- // prettier-ignore -->
+  <splider-component data-options='{{ splideOptions }}' class="splide">
+    <div class="splide__track">
+      <ul class="splide__list spliding-container">
+        {% for block in section.blocks %}
+          <li class="splide__slide">
+            <div class="card-with-info__container">
+              <div class="card-with-info__wrapper">
+                <div class="card-with-info__image-container">
+                  <img src="{{ block.settings.product.featured_image | image_url }}" alt="" />
+                  <button class="card-with-info__quick-look" data-url="{{ block.settings.product.url }}">Quick look
+                  {% comment %} {{ block.settings.product.url }} {% endcomment %}
+
+                  </button>
+                </div>
+                <div class="card-with-info__info-container">
+                  <div class="card-with-info__color-variant">
+                    {% for option in block.settings.product.variants %}
+                      <div class="card-with-info__color-container">
+                        <div class="card-with-info__black color" style="background-color: {{ option.title }};"></div>
+                      </div>
+                    {% endfor %}
+                  </div>
+                  <p class="card-with-info__theme">Veena look
+                  </p>
+                  <h3 class="card-with-info__title">{{ block.settings.product.title }}</h3>
+                  <h2 class="card-with-info__price">{{ block.settings.product.price | money }}</h2>
+
+                  <p class="card-with-info__stocks" style="color: {% if block.settings.product.variants[0].inventory_quantity >10 %} rgb(0, 138, 0); {% else %} rgb(255, 0, 0); {% endif %}%}">
+                    {% if block.settings.product.variants[0].inventory_quantity > 10 %}
+                      {{ block.settings.product.variants[0].inventory_quantity }} in stocks
+                    {% else %}
+                      Only {{ block.settings.product.variants[0].inventory_quantity }} units left
+                    {% endif %}
+                  </p>
+
+                </div>
+              </div>
+            </div>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </splider-component>
+  <dialog class="modal"></dialog>
+</div>
+
+
+{% schema %}
+  {
+    "name": "You may also like",
+    "tag": "section",
+    "class": "you-may-also-like",
+    "settings": [
+      {
+        "type": "richtext",
+        "id": "header",
+        "label": "Header",
+        "default": "<p>You may also like</p>"
+      }
+    ],
+    "presets": [
+      {
+        "name": "You may also like"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "card",
+        "name": "Card",
+        "settings": [
+          {
+            "type": "product",
+            "id": "product",
+            "label": "Product"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

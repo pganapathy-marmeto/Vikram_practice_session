@@ -10,6 +10,13 @@
             "text_style": "uppercase"
           }
         },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "circle"
+          }
+        },
         "title": {
           "type": "title",
           "settings": {
@@ -18,13 +25,6 @@
         "price": {
           "type": "price",
           "settings": {
-          }
-        },
-        "variant_picker": {
-          "type": "variant_picker",
-          "settings": {
-            "picker_type": "button",
-            "swatch_shape": "circle"
           }
         },
         "quantity_selector": {
@@ -37,6 +37,11 @@
           "settings": {
             "show_dynamic_checkout": true,
             "show_gift_card_recipient": true
+          }
+        },
+        "coupon_myGAaR": {
+          "type": "coupon",
+          "settings": {
           }
         },
         "description": {
@@ -53,11 +58,12 @@
       },
       "block_order": [
         "vendor",
+        "variant_picker",
         "title",
         "price",
-        "variant_picker",
         "quantity_selector",
         "buy_buttons",
+        "coupon_myGAaR",
         "description",
         "share"
       ],
