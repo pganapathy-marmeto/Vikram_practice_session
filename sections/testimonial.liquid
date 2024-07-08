@@ -1,0 +1,114 @@
+{{ 'testimonial.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'testimonial.js' | asset_url }}" defer></script>
+
+{% capture spliderOptions %}
+    {
+        "type": "loop",
+        "perMove": 1,
+        "width":"400px",
+        "pagination":true,
+        "arrows":false
+    }
+{% endcapture %}
+<div class="testimonial-container page-width">
+  <div class="testimonial-wrapper">
+    <div class="testimonial__image-wrapper ">
+      <div class="testimonial_image no-display">
+        <img src="https://cdn.shopify.com/s/files/1/0658/0636/8936/files/brown-fullSleeve.webp?v=1719410302" alt="">
+      </div>
+      <div class="testimonial_image no-display">
+        <img src="https://cdn.shopify.com/s/files/1/0658/0636/8936/files/brown-jacket.webp?v=1719406071" alt="">
+      </div>
+      <div class="testimonial_image displaying">
+        <img src="https://cdn.shopify.com/s/files/1/0658/0636/8936/files/black-jumsuit.webp?v=1719406521" alt="">
+      </div>
+    </div>
+    <div class="testimonial__content-wrapper">
+      <h2 class="testimonial_heading">Testimonials</h2>
+      <p class="testimonial_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <splider-component data-options='{{ spliderOptions }}' class="splide">
+        <div class="splide__track">
+          <ul class="splide__list spliding-container">
+            {% for block in section.blocks %}
+              <li class="splide__slide">
+                <div class="review-card__container">
+                  <div class="review-card__wrapper">
+                    {{ block.settings.review }}
+                    <div class="review-card__author-details">
+                      <div class="review-card__author-profile-picture">
+                        <img src="{{ block.settings.author-pic.src | image_url }}" alt="">
+                      </div>
+                      <div class="review-card__author-description">
+                        <p class="review-card__author-name">{{ block.settings.author-name }}</p>
+                        <p class="review-card__author-designation">{{ block.settings.designation }}</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </splider-component>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "testimonial",
+    "tag": "section",
+    "class": "testimonial",
+    "settings": [],
+    "blocks": [
+      {
+        "type": "review",
+        "name": "Review Card",
+        "settings": [
+          {
+            "type": "product",
+            "id": "product",
+            "label": "Product"
+          },
+          {
+            "type": "richtext",
+            "id": "review",
+            "label": "Author review",
+            "default": "<p>“ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque  “</p>"
+          },
+          {
+            "type": "image_picker",
+            "id": "author-pic",
+            "label": "Author picture",
+            "info": "Recommended size:"
+          },
+          {
+            "type": "richtext",
+            "id": "author-name",
+            "label": "Author name",
+            "default": "<p>Mr. John Doe</p>"
+          }, {
+            "type": "select",
+            "id": "designation",
+            "label": "Designation",
+            "options": [
+              {
+                "value": "Clients",
+                "label": "Clients"
+              }, {
+                "value": "Vendor",
+                "label": "Vendor"
+              }
+            ],
+            "default": "Clients"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "testimonial"
+      }
+    ]
+  }
+{% endschema %}

@@ -2,6 +2,33 @@
   "name": "t:sections.footer.name",
   "type": "footer",
   "sections": {
+    "newsletter_UqRpy4": {
+      "type": "newsletter",
+      "blocks": {
+        "heading_UwnqRh": {
+          "type": "heading",
+          "settings": {
+            "heading": "Subscribe to our Newsletter",
+            "heading_size": "h1"
+          }
+        },
+        "email_form_dhXTcM": {
+          "type": "email_form",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "heading_UwnqRh",
+        "email_form_dhXTcM"
+      ],
+      "settings": {
+        "color_scheme": "scheme-5",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "footer": {
       "type": "footer",
       "disabled": true,
@@ -22,6 +49,7 @@
     }
   },
   "order": [
+    "newsletter_UqRpy4",
     "footer"
   ]
 }

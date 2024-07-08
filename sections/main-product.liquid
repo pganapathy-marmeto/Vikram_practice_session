@@ -87,6 +87,8 @@
                 {% render block %}
               {% when 'coupon' %}
                 {% render 'coupon', product:product %}
+              {% when 'pincode' %}
+                <pin-checker></pin-checker>
               {%- when 'text' -%}
                 <p
                   class="product__text inline-richtext{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}"
@@ -792,6 +794,11 @@
     {
       "type": "coupon",
       "name":"Discount coupon",
+      "limit":1
+    },
+    {
+      "type": "pincode",
+      "name":"Pincode checker",
       "limit":1
     },
     {

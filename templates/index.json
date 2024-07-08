@@ -1,247 +1,49 @@
-/*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
 {
   "sections": {
-    "image_banner": {
-      "type": "image-banner",
+    "testimonial_Lyr3Tq": {
+      "type": "testimonial",
       "blocks": {
-        "heading": {
-          "type": "heading",
+        "review_zbAwMP": {
+          "type": "review",
           "settings": {
-            "heading": "Browse our latest products",
-            "heading_size": "h0"
+            "product": "bangle-bracelet",
+            "review": "<p>“ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque  “<\/p>",
+            "author-pic": "shopify:\/\/shop_images\/black-jumsuit.webp",
+            "author-name": "<p>Mr. John Doe<\/p>",
+            "designation": "Vendor"
           }
         },
-        "button": {
-          "type": "buttons",
+        "review_gVVnbp": {
+          "type": "review",
           "settings": {
-            "button_label_1": "Shop all",
-            "button_link_1": "shopify:\/\/collections\/all",
-            "button_style_secondary_1": true,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
+            "product": "chain-bracelet",
+            "review": "<p>“ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque  “<\/p>",
+            "author-pic": "shopify:\/\/shop_images\/corn-jacket.webp",
+            "author-name": "<p>Mr. John Doe<\/p>",
+            "designation": "Clients"
+          }
+        },
+        "review_77md7D": {
+          "type": "review",
+          "settings": {
+            "product": "dreamcatcher-pendant-necklace",
+            "review": "<p>“ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque  “<\/p>",
+            "author-pic": "shopify:\/\/shop_images\/brown-fullSleeve.webp",
+            "author-name": "<p>Mr. John Doe<\/p>",
+            "designation": "Clients"
           }
         }
       },
       "block_order": [
-        "heading",
-        "button"
-      ],
-      "disabled": true,
-      "settings": {
-        "image_overlay_opacity": 40,
-        "image_height": "large",
-        "desktop_content_position": "bottom-center",
-        "show_text_box": false,
-        "desktop_content_alignment": "center",
-        "color_scheme": "scheme-3",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": false,
-        "show_text_below": false
-      }
-    },
-    "featured_collection": {
-      "type": "featured-collection",
-      "disabled": true,
-      "settings": {
-        "title": "Featured products",
-        "heading_size": "h2",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "all",
-        "products_to_show": 8,
-        "columns_desktop": 4,
-        "full_width": false,
-        "show_view_all": true,
-        "view_all_style": "solid",
-        "enable_desktop_slider": false,
-        "color_scheme": "scheme-1",
-        "image_ratio": "adapt",
-        "image_shape": "default",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": false,
-        "quick_add": "none",
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "padding_top": 44,
-        "padding_bottom": 36
-      }
-    },
-    "image_with_text_overlay_fxqyV6": {
-      "type": "image-with-text-overlay",
-      "disabled": true,
-      "settings": {
-        "image_1": "shopify:\/\/shop_images\/image_1.png",
-        "image_2": "shopify:\/\/shop_images\/image_2.png",
-        "catch_phase": "<p>Be Winter Ready!<\/p>",
-        "heading": "<p><strong>Apparel & Accessories<\/strong><\/p>",
-        "description": "<p>Our carefully curated collection features high-quality gloves, hats, scraves, goggles, jackets and more, designed to withstand the hardest winter condiitions while enhancing your performance.<\/p>",
-        "button_label": "Shop Now ↗",
-        "button_link": "shopify:\/\/collections",
-        "content_position": "image_first",
-        "desktop_padding": 40
-      }
-    },
-    "tab_switcher_XyN9xy": {
-      "type": "tab-switcher",
-      "disabled": true,
-      "settings": {
-        "heading": "",
-        "description": ""
-      }
-    },
-    "content_with_slider_wTJbzT": {
-      "type": "content-with-slider",
-      "blocks": {
-        "hotspot_zUr4XX": {
-          "type": "hotspot",
-          "settings": {
-            "hotspot": true,
-            "hotspot_product": "high-performance-snow-goggles",
-            "hotspot_horizontal_position": 10,
-            "hotspot_vertical_position": 10
-          }
-        },
-        "hotspot_QfMTCN": {
-          "type": "hotspot",
-          "settings": {
-            "hotspot": true,
-            "hotspot_product": "water-resistant-snow-hoodie",
-            "hotspot_horizontal_position": 10,
-            "hotspot_vertical_position": 10
-          }
-        },
-        "hotspot_GL8LUn": {
-          "type": "hotspot",
-          "settings": {
-            "hotspot": true,
-            "hotspot_product": "beginners-guide-to-snowboarding-dvd",
-            "hotspot_horizontal_position": 10,
-            "hotspot_vertical_position": 10
-          }
-        }
-      },
-      "block_order": [
-        "hotspot_zUr4XX",
-        "hotspot_QfMTCN",
-        "hotspot_GL8LUn"
-      ],
-      "disabled": true,
-      "settings": {
-        "content_image": "shopify:\/\/shop_images\/igloo_main_image.webp",
-        "padding": 20
-      }
-<<<<<<< HEAD
-    },
-    "shop_the_look_D7ANtY": {
-      "type": "shop-the-look",
-      "blocks": {
-        "image_if7nf6": {
-          "type": "image",
-          "settings": {
-            "heading": "Heading",
-            "description": "",
-            "button_label": "Click me",
-            "button_link": "",
-            "hotspot_primary": false,
-            "hotspot_product_1": "",
-            "hotspot_1_horizontal_position": 10,
-            "hotspot_1_vertical_position": 10,
-            "hotspot_secondory": false,
-            "hotspot_product_2": "",
-            "hotspot_2_horizontal_position": 10,
-            "hotspot_2_vertical_position": 10
-          }
-        }
-      },
-      "block_order": [
-        "image_if7nf6"
-      ],
-      "disabled": true,
-      "settings": {
-        "slide_type": "loop",
-        "slide_per_page": 2,
-        "padding_top": 10,
-        "padding_bottom": 10
-      }
-    },
-    "you_may_also_like_fwAwje": {
-      "type": "you-may-also-like",
-      "blocks": {
-        "card_9Kdc3m": {
-          "type": "card",
-          "settings": {
-            "product": "full-sleeve-high-neck-t-shirt"
-          }
-        },
-        "card_TkhbAi": {
-          "type": "card",
-          "settings": {
-            "product": "mens-half-sleeve-t-shirt"
-          }
-        },
-        "card_xrddBQ": {
-          "type": "card",
-          "settings": {
-            "product": "womens-oversized-hoodie"
-          }
-        },
-        "card_88cdMm": {
-          "type": "card",
-          "settings": {
-            "product": "full-sleeve-high-neck-t-shirt-1"
-          }
-        },
-        "card_KMiYPY": {
-          "type": "card",
-          "settings": {
-            "product": "womens-casual-jacket"
-          }
-        },
-        "card_xi6xJT": {
-          "type": "card",
-          "settings": {
-            "product": "solid-women-jumpsuit"
-          }
-        }
-      },
-      "block_order": [
-        "card_9Kdc3m",
-        "card_TkhbAi",
-        "card_xrddBQ",
-        "card_88cdMm",
-        "card_KMiYPY",
-        "card_xi6xJT"
+        "review_zbAwMP",
+        "review_gVVnbp",
+        "review_77md7D"
       ],
       "settings": {
-        "header": "<p>You may also like<\/p>"
       }
-=======
->>>>>>> 95636c20eb0547eff2facb9daecf8f41ebba841c
     }
   },
   "order": [
-    "image_banner",
-    "featured_collection",
-<<<<<<< HEAD
-    "content_with_slider_pQetNC",
-    "shop_the_look_D7ANtY",
-    "you_may_also_like_fwAwje"
-=======
-    "image_with_text_overlay_fxqyV6",
-    "tab_switcher_XyN9xy",
-    "content_with_slider_wTJbzT"
->>>>>>> 95636c20eb0547eff2facb9daecf8f41ebba841c
+    "testimonial_Lyr3Tq"
   ]
 }

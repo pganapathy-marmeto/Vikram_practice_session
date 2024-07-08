@@ -17,6 +17,11 @@
             "swatch_shape": "circle"
           }
         },
+        "pincode_ixkr6A": {
+          "type": "pincode",
+          "settings": {
+          }
+        },
         "title": {
           "type": "title",
           "settings": {
@@ -59,6 +64,7 @@
       "block_order": [
         "vendor",
         "variant_picker",
+        "pincode_ixkr6A",
         "title",
         "price",
         "quantity_selector",
