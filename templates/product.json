@@ -144,13 +144,27 @@
           "settings": {
             "product": "solid-women-jumpsuit"
           }
+        },
+        "card_gg9XUe": {
+          "type": "card",
+          "settings": {
+            "product": "full-sleeve-high-neck-t-shirt"
+          }
+        },
+        "card_iAtWnE": {
+          "type": "card",
+          "settings": {
+            "product": "high-performance-snow-goggles"
+          }
         }
       },
       "block_order": [
         "card_7j6tYx",
         "card_YnndWf",
         "card_CVKRJf",
-        "card_n8T9k6"
+        "card_n8T9k6",
+        "card_gg9XUe",
+        "card_iAtWnE"
       ],
       "settings": {
         "header": "<p>You may also like<\/p>"
