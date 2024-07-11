@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "main": {
@@ -73,6 +82,7 @@
         "description",
         "share"
       ],
+      "disabled": true,
       "settings": {
         "enable_sticky_info": true,
         "color_scheme": "scheme-1",
@@ -91,6 +101,7 @@
     },
     "related-products": {
       "type": "related-products",
+      "disabled": true,
       "settings": {
         "heading": "You may also like",
         "heading_size": "h2",
@@ -106,10 +117,56 @@
         "padding_top": 36,
         "padding_bottom": 28
       }
+    },
+    "you_may_also_like_Kkit3h": {
+      "type": "you-may-also-like",
+      "blocks": {
+        "card_7j6tYx": {
+          "type": "card",
+          "settings": {
+            "product": "full-sleeve-high-neck-t-shirt"
+          }
+        },
+        "card_YnndWf": {
+          "type": "card",
+          "settings": {
+            "product": "full-sleeve-high-neck-t-shirt-1"
+          }
+        },
+        "card_CVKRJf": {
+          "type": "card",
+          "settings": {
+            "product": "mens-half-sleeve-t-shirt"
+          }
+        },
+        "card_CMKfyU": {
+          "type": "card",
+          "settings": {
+            "product": "party-outfit"
+          }
+        },
+        "card_n8T9k6": {
+          "type": "card",
+          "settings": {
+            "product": "solid-women-jumpsuit"
+          }
+        }
+      },
+      "block_order": [
+        "card_7j6tYx",
+        "card_YnndWf",
+        "card_CVKRJf",
+        "card_CMKfyU",
+        "card_n8T9k6"
+      ],
+      "settings": {
+        "header": "<p>You may also like<\/p>"
+      }
     }
   },
   "order": [
     "main",
-    "related-products"
+    "related-products",
+    "you_may_also_like_Kkit3h"
   ]
 }
