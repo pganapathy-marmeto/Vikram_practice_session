@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "testimonial_Lyr3Tq": {
@@ -41,9 +50,41 @@
       ],
       "settings": {
       }
+    },
+    "content_with_slider_gbhTYg": {
+      "type": "content-with-slider",
+      "blocks": {
+        "hotspot_7zi6KV": {
+          "type": "hotspot",
+          "settings": {
+            "hotspot": true,
+            "hotspot_product": "chain-bracelet",
+            "hotspot_horizontal_position": 10,
+            "hotspot_vertical_position": 10
+          }
+        },
+        "hotspot_kAgVtc": {
+          "type": "hotspot",
+          "settings": {
+            "hotspot": true,
+            "hotspot_product": "choker-with-bead",
+            "hotspot_horizontal_position": 27,
+            "hotspot_vertical_position": 59
+          }
+        }
+      },
+      "block_order": [
+        "hotspot_7zi6KV",
+        "hotspot_kAgVtc"
+      ],
+      "settings": {
+        "content_image": "shopify:\/\/shop_images\/kanchipuram2.png",
+        "padding": 20
+      }
     }
   },
   "order": [
-    "testimonial_Lyr3Tq"
+    "testimonial_Lyr3Tq",
+    "content_with_slider_gbhTYg"
   ]
 }
